@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Fácil - Acesso do Agente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .instruction {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 12px;
+        }
+
+        /* Placeholder para a imagem */
+        .image-placeholder {
+            width: 100%;
+            height: 150px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Placeholder para a imagem -->
+        <div class="image-placeholder">
+            [Imagem do WhatsApp de 2025-11-17 à(s) 19.50.49_8bfe3f6e.jpg]
+        </div>
+
+        <div class="logo">
+            <h1>SUPORTE FÁCIL</h1>
+        </div>
+
+        <h2 class="subtitle">ACESSO DO AGENTE</h2>
+        
+        <p class="instruction">Entre com suas credenciais para continuar</p>
+
+        <form>
+            <div class="form-group">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome de usuário">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <button type="submit" class="login-btn">ENTRAR</button>
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Sua Empresa. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript básico para o formulário
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            if (username && password) {
+                alert('Login realizado com sucesso!');
+                // Aqui você pode adicionar a lógica de autenticação
+            } else {
+                alert('Por favor, preencha todos os campos!');
+            }
+        });
+    </script>
+</body>
+</html>
