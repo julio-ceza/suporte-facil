@@ -1,0 +1,37 @@
+{
+  "name": "suporte-facil",
+  "version": "1.0.0",
+  "description": "Sistema de Suporte Fácil",
+  "private": true,
+  "homepage": "https://github.com/julio-ceza/teste.git",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.0.0",
+    "postcss": "^8.5.6",
+    "stylelint": "^16.26.0",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-config-tailwindcss": "^1.0.0",
+    "tailwindcss": "^4.1.17"
+  },
+  "keywords": [
+    "suporte",
+    "chamados",
+    "nextjs"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
