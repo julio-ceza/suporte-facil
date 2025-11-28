@@ -1,15 +1,16 @@
+import './globals.css';
+
 export const metadata = {
-  title: 'Suporte Fácil - Sistema de Chamados',
-  description: 'Sistema de gerenciamento de chamados de suporte técnico',
-}
+  title: 'Suporte Fácil - Login',
+  description: 'Sistema de suporte técnico',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body>{children}</body>
+      <body style={{ margin: 0, padding: 0, backgroundColor: '#fff' }}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
