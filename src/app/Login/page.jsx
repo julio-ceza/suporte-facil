@@ -93,7 +93,7 @@ const LoginPage = () => {
       </div>
       
       <div className="footer">
-        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
       </div>
     </div>
   );
